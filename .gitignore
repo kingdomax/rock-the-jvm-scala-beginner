@@ -1,2 +1,11 @@
+# general
 *.class
+
+# intellij idea
 *.log
+*.iml
+*.ipr
+*.iws
+.idea
+
+# vscode metals extension
