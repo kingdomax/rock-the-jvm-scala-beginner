@@ -42,12 +42,12 @@ object Function extends App {
     }
     println(factorial(5))
 
-    def fibonacci(number: Int): Int = {
-      if (number == 0) 0
-      else if (number == 1 || number == 2) 1
-      else fibonacci(number - 1) + fibonacci(number - 2)
+    def fibonacci(position: Int): Int = {
+      if (position == 0) 0
+      else if (position == 1 || position == 2) 1
+      else fibonacci(position - 1) + fibonacci(position - 2)
     }
-    println(fibonacci(8)) // 1 1 2 3 5 8 13 21  (1+1 = 2 in 3rd position)
+    println(fibonacci(8)) // 1 1 2 3 5 8 13 21  (1+1 = 2 in 3rd position, 8+13 = 21 8th position)
 
     def isPrimeNumber(number: Int): Boolean = {
       def isPrimeUntil(divisor: Int): Boolean = {
