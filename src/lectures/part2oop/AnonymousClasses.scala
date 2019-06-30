@@ -27,18 +27,4 @@ object AnonymousClasses extends App {
   val jim = new Person("Jim") { // don't forget to pass
     override def sayHi: Unit = println(s"Hi my name is Jim")
   }
-
-
-  /*
-    Exercise
-    1.  Generic trait MyPredicate[T] with a little method test(T) => Boolean
-    2.  Generic trait MyTransaformer[A, B]
-    3.  MyList:
-        - map(transformer) => MyList
-        - filter(predicate) => MyList
-        - flatMap(transformer from A tomyList[B]) => MyList[B]
-
-        class EveentPrdicate extends MyPredicate[Int]
-        class StringToIntTransformer extends MyTransforermet[String, Int]
-   */
 }
