@@ -8,6 +8,7 @@ object Generics extends App {
 
   // GENERIC CLASS
   class MyList[+A] {
+
     def add[B >: A](element: B): MyList[B] = ???
 
     /*
@@ -54,7 +55,6 @@ object Generics extends App {
   class Trainer[-A]
 
   val trainer: Trainer[Cat] = new Trainer[Animal]
-
 
   // BOUNDED TYPES (generic type that allow in some type)
   // upper bound type, accept only subtype

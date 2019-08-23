@@ -30,7 +30,7 @@ object Expressions extends App {
 
   // Side effects: print(), whiles, reassigning
   val aWeirdValue: Unit = aVariable = 3 // Unit === void
-  println(aWeirdValue)
+  println(s"aWeirdValue = $aWeirdValue")
 
   // Code blocks
   val aCodeBlock: String = {

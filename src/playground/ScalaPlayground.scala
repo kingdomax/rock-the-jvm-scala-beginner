@@ -30,6 +30,7 @@ object ScalaPlayground {
 
   // COMPANIONS PATTERNS
   val bobbie = Person(mary, john)
+  println(bobbie.name)
 
   // Scala Applications = Scala object with
   // def main(args: Array[String]): Unit
